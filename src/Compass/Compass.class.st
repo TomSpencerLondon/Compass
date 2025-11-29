@@ -21,5 +21,5 @@ Compass >> initialize [
 
 { #category : 'as yet unclassified' }
 Compass >> turnClockwise [
-	^ currentDirection clockwise.
+	currentDirection := currentDirection clockwise.
 ]

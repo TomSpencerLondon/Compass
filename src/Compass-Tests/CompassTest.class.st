@@ -14,6 +14,14 @@ CompassTest >> testCompassFullRotation [
 ]
 
 { #category : 'tests' }
+CompassTest >> testCompassTurnClockwise [
+	| compass |
+	compass := Compass new.
+	compass turnClockwise.
+	self assert: compass currentDirection name equals: 'NE'.
+]
+
+{ #category : 'tests' }
 CompassTest >> testCompasssStartsFacingNorth [
 	| compass |
 	compass := Compass new.
