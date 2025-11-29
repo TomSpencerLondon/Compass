@@ -21,11 +21,51 @@ NorthWest >> degrees [
 ]
 
 { #category : 'accessing' }
-NorthWest >> name [
-	^ 'NW'.
+NorthWest >> distanceFromEast [
+	^ 3
 ]
 
 { #category : 'accessing' }
-NorthWest >> opposite [
-	^ SouthEast new.
+NorthWest >> distanceFromNorth [
+	^ 1
+]
+
+{ #category : 'accessing' }
+NorthWest >> distanceFromNorthEast [
+	^ 2
+]
+
+{ #category : 'accessing' }
+NorthWest >> distanceFromNorthWest [
+	^ 0
+]
+
+{ #category : 'accessing' }
+NorthWest >> distanceFromSouth [
+	^ 3
+]
+
+{ #category : 'accessing' }
+NorthWest >> distanceFromSouthEast [
+	^ 4
+]
+
+{ #category : 'accessing' }
+NorthWest >> distanceFromSouthWest [
+	^ 2
+]
+
+{ #category : 'accessing' }
+NorthWest >> distanceFromWest [
+	^ 1
+]
+
+{ #category : 'accessing' }
+NorthWest >> distanceTo: aDirection [
+	^ aDirection distanceFromNorthWest
+]
+
+{ #category : 'accessing' }
+NorthWest >> name [
+	^ 'NW'.
 ]

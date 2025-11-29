@@ -27,11 +27,51 @@ North >> degrees [
 ]
 
 { #category : 'accessing' }
-North >> name [
-	^ 'N'
+North >> distanceFromEast [
+	^ 2
 ]
 
 { #category : 'accessing' }
-North >> opposite [
-	^ South new.
+North >> distanceFromNorth [
+	^ 0
+]
+
+{ #category : 'accessing' }
+North >> distanceFromNorthEast [
+	^ 1
+]
+
+{ #category : 'accessing' }
+North >> distanceFromNorthWest [
+	^ 1
+]
+
+{ #category : 'accessing' }
+North >> distanceFromSouth [
+	^ 4
+]
+
+{ #category : 'accessing' }
+North >> distanceFromSouthEast [
+	^ 3
+]
+
+{ #category : 'accessing' }
+North >> distanceFromSouthWest [
+	^ 3
+]
+
+{ #category : 'accessing' }
+North >> distanceFromWest [
+	^ 2
+]
+
+{ #category : 'accessing' }
+North >> distanceTo: aDirection [
+	^ aDirection distanceFromNorth
+]
+
+{ #category : 'accessing' }
+North >> name [
+	^ 'N'
 ]

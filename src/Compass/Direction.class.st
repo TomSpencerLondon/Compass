@@ -4,3 +4,8 @@ Class {
 	#category : 'Compass',
 	#package : 'Compass'
 }
+
+{ #category : 'accessing' }
+Direction >> opposite [
+	^ self clockwise clockwise clockwise clockwise
+]

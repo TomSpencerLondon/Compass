@@ -45,6 +45,336 @@ CompassTest >> testCompasssStartsFacingNorth [
 ]
 
 { #category : 'tests' }
+CompassTest >> testDistanceEastToEast [
+    self assert: (East new distanceTo: East new) equals: 0.
+]
+
+{ #category : 'tests' }
+CompassTest >> testDistanceEastToNorth [
+    self assert: (East new distanceTo: North new) equals: 2.
+]
+
+{ #category : 'tests' }
+CompassTest >> testDistanceEastToNorthEast [
+    self assert: (East new distanceTo: NorthEast new) equals: 1.
+]
+
+{ #category : 'tests' }
+CompassTest >> testDistanceEastToNorthWest [
+    self assert: (East new distanceTo: NorthWest new) equals: 3.
+
+]
+
+{ #category : 'tests' }
+CompassTest >> testDistanceEastToSouth [
+    self assert: (East new distanceTo: South new) equals: 2.
+
+]
+
+{ #category : 'tests' }
+CompassTest >> testDistanceEastToSouthEast [
+    self assert: (East new distanceTo: SouthEast new) equals: 1.
+
+]
+
+{ #category : 'tests' }
+CompassTest >> testDistanceEastToSouthWest [
+    self assert: (East new distanceTo: SouthWest new) equals: 3.
+]
+
+{ #category : 'tests' }
+CompassTest >> testDistanceEastToWest [
+    self assert: (East new distanceTo: West new) equals: 4.
+
+]
+
+{ #category : 'tests' }
+CompassTest >> testDistanceNorthEastToEast [
+    self assert: (NorthEast new distanceTo: East new) equals: 1.
+]
+
+{ #category : 'tests' }
+CompassTest >> testDistanceNorthEastToNorth [
+    self assert: (NorthEast new distanceTo: North new) equals: 1.
+]
+
+{ #category : 'tests' }
+CompassTest >> testDistanceNorthEastToNorthEast [
+    self assert: (NorthEast new distanceTo: NorthEast new) equals: 0.
+]
+
+{ #category : 'tests' }
+CompassTest >> testDistanceNorthEastToNorthWest [
+    self assert: (NorthEast new distanceTo: NorthWest new) equals: 2.
+]
+
+{ #category : 'tests' }
+CompassTest >> testDistanceNorthEastToSouth [
+    self assert: (NorthEast new distanceTo: South new) equals: 3.
+]
+
+{ #category : 'tests' }
+CompassTest >> testDistanceNorthEastToSouthEast [
+    self assert: (NorthEast new distanceTo: SouthEast new) equals: 2.
+]
+
+{ #category : 'tests' }
+CompassTest >> testDistanceNorthEastToSouthWest [
+    self assert: (NorthEast new distanceTo: SouthWest new) equals: 4.
+]
+
+{ #category : 'tests' }
+CompassTest >> testDistanceNorthEastToWest [
+    self assert: (NorthEast new distanceTo: West new) equals: 3.
+]
+
+{ #category : 'tests' }
+CompassTest >> testDistanceNorthToEast [
+    self assert: (North new distanceTo: East new) equals: 2.
+]
+
+{ #category : 'tests' }
+CompassTest >> testDistanceNorthToNorth [
+	self assert: (North new distanceTo: North new) equals: 0.
+]
+
+{ #category : 'tests' }
+CompassTest >> testDistanceNorthToNorthEast [
+    self assert: (North new distanceTo: NorthEast new) equals: 1.
+]
+
+{ #category : 'tests' }
+CompassTest >> testDistanceNorthToNorthWest [
+    self assert: (North new distanceTo: NorthWest new) equals: 1.
+]
+
+{ #category : 'tests' }
+CompassTest >> testDistanceNorthToSouth [
+    self assert: (North new distanceTo: South new) equals: 4.
+]
+
+{ #category : 'tests' }
+CompassTest >> testDistanceNorthToSouthEast [
+    self assert: (North new distanceTo: SouthEast new) equals: 3.
+]
+
+{ #category : 'tests' }
+CompassTest >> testDistanceNorthToSouthWest [
+    self assert: (North new distanceTo: SouthWest new) equals: 3.
+
+]
+
+{ #category : 'tests' }
+CompassTest >> testDistanceNorthToWest [
+    self assert: (North new distanceTo: West new) equals: 2.
+]
+
+{ #category : 'tests' }
+CompassTest >> testDistanceNorthWestToEast [
+    self assert: (NorthWest new distanceTo: East new) equals: 3.
+]
+
+{ #category : 'tests' }
+CompassTest >> testDistanceNorthWestToNorth [
+    self assert: (NorthWest new distanceTo: North new) equals: 1.
+]
+
+{ #category : 'tests' }
+CompassTest >> testDistanceNorthWestToNorthEast [
+    self assert: (NorthWest new distanceTo: NorthEast new) equals: 2.
+]
+
+{ #category : 'tests' }
+CompassTest >> testDistanceNorthWestToNorthWest [
+    self assert: (NorthWest new distanceTo: NorthWest new) equals: 0.
+]
+
+{ #category : 'tests' }
+CompassTest >> testDistanceNorthWestToSouth [
+    self assert: (NorthWest new distanceTo: South new) equals: 3.
+]
+
+{ #category : 'tests' }
+CompassTest >> testDistanceNorthWestToSouthEast [
+    self assert: (NorthWest new distanceTo: SouthEast new) equals: 4.
+]
+
+{ #category : 'tests' }
+CompassTest >> testDistanceNorthWestToSouthWest [
+    self assert: (NorthWest new distanceTo: SouthWest new) equals: 2.
+]
+
+{ #category : 'tests' }
+CompassTest >> testDistanceNorthWestToWest [
+    self assert: (NorthWest new distanceTo: West new) equals: 1.
+]
+
+{ #category : 'tests' }
+CompassTest >> testDistanceSouthEastToEast [
+    self assert: (SouthEast new distanceTo: East new) equals: 1.
+]
+
+{ #category : 'tests' }
+CompassTest >> testDistanceSouthEastToNorth [
+    self assert: (SouthEast new distanceTo: North new) equals: 3.
+]
+
+{ #category : 'tests' }
+CompassTest >> testDistanceSouthEastToNorthEast [
+    self assert: (SouthEast new distanceTo: NorthEast new) equals: 2.
+]
+
+{ #category : 'tests' }
+CompassTest >> testDistanceSouthEastToNorthWest [
+    self assert: (SouthEast new distanceTo: NorthWest new) equals: 4.
+]
+
+{ #category : 'tests' }
+CompassTest >> testDistanceSouthEastToSouth [
+    self assert: (SouthEast new distanceTo: South new) equals: 1.
+]
+
+{ #category : 'tests' }
+CompassTest >> testDistanceSouthEastToSouthEast [
+    self assert: (SouthEast new distanceTo: SouthEast new) equals: 0.
+]
+
+{ #category : 'tests' }
+CompassTest >> testDistanceSouthEastToSouthWest [
+    self assert: (SouthEast new distanceTo: SouthWest new) equals: 2.
+]
+
+{ #category : 'tests' }
+CompassTest >> testDistanceSouthEastToWest [
+    self assert: (SouthEast new distanceTo: West new) equals: 3.
+]
+
+{ #category : 'tests' }
+CompassTest >> testDistanceSouthToEast [
+    self assert: (South new distanceTo: East new) equals: 2.
+]
+
+{ #category : 'tests' }
+CompassTest >> testDistanceSouthToNorth [
+    self assert: (South new distanceTo: North new) equals: 4.
+
+]
+
+{ #category : 'tests' }
+CompassTest >> testDistanceSouthToNorthEast [
+    self assert: (South new distanceTo: NorthEast new) equals: 3.
+]
+
+{ #category : 'tests' }
+CompassTest >> testDistanceSouthToNorthWest [
+    self assert: (South new distanceTo: NorthWest new) equals: 3.
+
+]
+
+{ #category : 'tests' }
+CompassTest >> testDistanceSouthToSouth [
+    self assert: (South new distanceTo: South new) equals: 0.
+
+]
+
+{ #category : 'tests' }
+CompassTest >> testDistanceSouthToSouthEast [
+    self assert: (South new distanceTo: SouthEast new) equals: 1.
+]
+
+{ #category : 'tests' }
+CompassTest >> testDistanceSouthToSouthWest [
+    self assert: (South new distanceTo: SouthWest new) equals: 1.
+
+]
+
+{ #category : 'tests' }
+CompassTest >> testDistanceSouthToWest [
+    self assert: (South new distanceTo: West new) equals: 2.
+
+]
+
+{ #category : 'tests' }
+CompassTest >> testDistanceSouthWestToEast [
+    self assert: (SouthWest new distanceTo: East new) equals: 3.
+]
+
+{ #category : 'tests' }
+CompassTest >> testDistanceSouthWestToNorth [
+    self assert: (SouthWest new distanceTo: North new) equals: 3.
+]
+
+{ #category : 'tests' }
+CompassTest >> testDistanceSouthWestToNorthEast [
+    self assert: (SouthWest new distanceTo: NorthEast new) equals: 4.
+]
+
+{ #category : 'tests' }
+CompassTest >> testDistanceSouthWestToNorthWest [
+    self assert: (SouthWest new distanceTo: NorthWest new) equals: 2.
+]
+
+{ #category : 'tests' }
+CompassTest >> testDistanceSouthWestToSouth [
+    self assert: (SouthWest new distanceTo: South new) equals: 1.
+]
+
+{ #category : 'tests' }
+CompassTest >> testDistanceSouthWestToSouthEast [
+    self assert: (SouthWest new distanceTo: SouthEast new) equals: 2.
+]
+
+{ #category : 'tests' }
+CompassTest >> testDistanceSouthWestToSouthWest [
+    self assert: (SouthWest new distanceTo: SouthWest new) equals: 0.
+]
+
+{ #category : 'tests' }
+CompassTest >> testDistanceSouthWestToWest [
+    self assert: (SouthWest new distanceTo: West new) equals: 1.
+]
+
+{ #category : 'tests' }
+CompassTest >> testDistanceWestToEast [
+    self assert: (West new distanceTo: East new) equals: 4.
+]
+
+{ #category : 'tests' }
+CompassTest >> testDistanceWestToNorth [
+    self assert: (West new distanceTo: North new) equals: 2.
+]
+
+{ #category : 'tests' }
+CompassTest >> testDistanceWestToNorthEast [
+    self assert: (West new distanceTo: NorthEast new) equals: 3.
+]
+
+{ #category : 'tests' }
+CompassTest >> testDistanceWestToNorthWest [
+    self assert: (West new distanceTo: NorthWest new) equals: 1.
+]
+
+{ #category : 'tests' }
+CompassTest >> testDistanceWestToSouth [
+    self assert: (West new distanceTo: South new) equals: 2.
+]
+
+{ #category : 'tests' }
+CompassTest >> testDistanceWestToSouthEast [
+    self assert: (West new distanceTo: SouthEast new) equals: 3.
+]
+
+{ #category : 'tests' }
+CompassTest >> testDistanceWestToSouthWest [
+    self assert: (West new distanceTo: SouthWest new) equals: 1.
+]
+
+{ #category : 'tests' }
+CompassTest >> testDistanceWestToWest [
+    self assert: (West new distanceTo: West new) equals: 0.
+]
+
+{ #category : 'tests' }
 CompassTest >> testEastClockwiseIsSouthEast [ 
 	self assert: East new clockwise name equals: 'SE'.
 ]

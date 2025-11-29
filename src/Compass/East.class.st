@@ -21,11 +21,51 @@ East >> degrees [
 ]
 
 { #category : 'accessing' }
-East >> name [
-	^ 'E'
+East >> distanceFromEast [
+	^ 0
 ]
 
 { #category : 'accessing' }
-East >> opposite [
-	^ West new.
+East >> distanceFromNorth [
+	^ 2
+]
+
+{ #category : 'accessing' }
+East >> distanceFromNorthEast [
+	^ 1
+]
+
+{ #category : 'accessing' }
+East >> distanceFromNorthWest [
+	^ 3
+]
+
+{ #category : 'accessing' }
+East >> distanceFromSouth [
+	^ 2
+]
+
+{ #category : 'accessing' }
+East >> distanceFromSouthEast [
+	^ 1
+]
+
+{ #category : 'accessing' }
+East >> distanceFromSouthWest [
+	^ 3
+]
+
+{ #category : 'accessing' }
+East >> distanceFromWest [
+	^ 4
+]
+
+{ #category : 'accessing' }
+East >> distanceTo: aDirection [
+	^ aDirection distanceFromEast
+]
+
+{ #category : 'accessing' }
+East >> name [
+	^ 'E'
 ]
