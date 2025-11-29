@@ -1,6 +1,6 @@
 Class {
 	#name : 'SouthWest',
-	#superclass : 'Object',
+	#superclass : 'Direction',
 	#category : 'Compass',
 	#package : 'Compass'
 }
@@ -11,6 +11,21 @@ SouthWest >> clockwise [
 ]
 
 { #category : 'accessing' }
+SouthWest >> counterClockwise [
+	^ South new.
+]
+
+{ #category : 'accessing' }
+SouthWest >> degrees [
+	^ 225
+]
+
+{ #category : 'accessing' }
 SouthWest >> name [
 	^ 'SW'.
+]
+
+{ #category : 'accessing' }
+SouthWest >> opposite [
+	^ NorthEast new.
 ]

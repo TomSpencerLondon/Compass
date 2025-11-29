@@ -23,3 +23,8 @@ Compass >> initialize [
 Compass >> turnClockwise [
 	currentDirection := currentDirection clockwise.
 ]
+
+{ #category : 'as yet unclassified' }
+Compass >> turnCounterClockwise [
+	currentDirection := currentDirection counterClockwise.
+]

@@ -3,7 +3,7 @@ I am a class representing North
 "
 Class {
 	#name : 'North',
-	#superclass : 'Object',
+	#superclass : 'Direction',
 	#instVars : [
 		'name'
 	],
@@ -22,6 +22,16 @@ North >> counterClockwise [
 ]
 
 { #category : 'accessing' }
+North >> degrees [
+	^ 0
+]
+
+{ #category : 'accessing' }
 North >> name [
 	^ 'N'
+]
+
+{ #category : 'accessing' }
+North >> opposite [
+	^ South new.
 ]
