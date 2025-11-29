@@ -17,6 +17,11 @@ North >> clockwise [
 ]
 
 { #category : 'accessing' }
+North >> counterClockwise [
+	^ NorthWest new
+]
+
+{ #category : 'accessing' }
 North >> name [
 	^ 'N'
 ]

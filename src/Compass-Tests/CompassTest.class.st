@@ -42,6 +42,11 @@ CompassTest >> testNorthClockwiseIsNorthEast [
 ]
 
 { #category : 'tests' }
+CompassTest >> testNorthCounterClockwiseIsNorthWest [
+    self assert: North new counterClockwise name equals: 'NW'.
+]
+
+{ #category : 'tests' }
 CompassTest >> testNorthEastClockwiseIsEast [
 	self assert: NorthEast new clockwise name equals: 'E'.
 ]
@@ -63,6 +68,11 @@ CompassTest >> testNorthName [
 { #category : 'tests' }
 CompassTest >> testNorthWestClockwiseIsNorth [
 	self assert: NorthWest new clockwise name equals: 'N'.
+]
+
+{ #category : 'tests' }
+CompassTest >> testNorthWestClockwiseIsWest [
+    self assert: NorthWest new counterClockwise name equals: 'W'.
 ]
 
 { #category : 'tests' }
